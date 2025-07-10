@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Platform with $DFW Rewards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎬 Video Platform</h1>
+        <div id="user-info">
+            <button id="connect-btn">Connect Internet Identity</button>
+            <div id="balance-info" style="display: none;">
+                <span>Balance: <span id="balance">0</span> DFW</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <h2>Upload Video</h2>
+            <input type="file" id="video-file" accept="video/*">
+            <input type="text" id="video-title" placeholder="Video title">
+            <button id="upload-btn">Upload Video</button>
+            <div id="upload-progress"></div>
+        </section>
+
+        <section id="videos-section">
+            <h2>Videos Gallery</h2>
+            <div id="videos-grid"></div>
+        </section>
+    </main>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
